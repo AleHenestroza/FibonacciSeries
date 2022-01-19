@@ -12,9 +12,9 @@ public class Main {
         int n = in.nextInt();
         fibonacciCache = new long[n + 1];
 
-        long fib = fibonacci(n);
-
-        System.out.println(fib);
+        for (int i = 0; i <= n; i++) {
+            System.out.println(i + ": " + fibonacci(i));
+        }
     }
 
     // Slow implementation
